@@ -1,0 +1,35 @@
+
+<head>
+    <meta charset="utf-8">
+    <title>Counting Machine</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Counting Machine</h1>
+
+    <div id="counts">
+    </div>
+
+    <button id="plus">
+      +
+    </button>
+    <button id="minus">
+      -
+    </button>
+    <button id="zero">
+      0
+    </button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<!--This is our template. -->
+<!--Data will be inserted in its according place, replacing the brackets.-->
+<script id="counter-template" type="text/x-handlebars-template">
+  <h3 class="{{#if high}}high{{/if}}{{#if low}}low{{/if}}">{{count}}</h3>
+</script>
+
+
+<!--Your new content will be displayed in here-->
+
+</body>
